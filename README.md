@@ -11,8 +11,12 @@ Web Content Analyzer is an android application allowing to give the classificati
 - Consult the history of analyzed pages
 
 # Screenshots
-<img src="https://user-images.githubusercontent.com/62522441/225347464-161b8ee2-bbed-4267-8d5c-161b81238bfc.png" width="800" height="600">
-<img src="https://user-images.githubusercontent.com/62522441/225348610-1d8ea39e-66f2-48ff-b233-4107b41716b4.png" width="800" height="600">
+<img src="https://user-images.githubusercontent.com/62522441/225347464-161b8ee2-bbed-4267-8d5c-161b81238bfc.png">
+<img src="https://user-images.githubusercontent.com/62522441/225348610-1d8ea39e-66f2-48ff-b233-4107b41716b4.png">
+<img src="https://user-images.githubusercontent.com/62522441/225350969-f89e647c-b3e0-43ba-9573-71ef582204b5.png">
+<img src="https://user-images.githubusercontent.com/62522441/225351062-94630484-8840-474b-96b6-748fb0301b76.png">
+<img src="https://user-images.githubusercontent.com/62522441/225351174-953a105e-ade5-450a-a141-9c8747cd2344.png">
+<img src="https://user-images.githubusercontent.com/62522441/225351564-a56333b3-2624-4a07-a9da-12c74f4f9b79.png">
 
 # Technologies used
 
