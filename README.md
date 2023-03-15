@@ -2,7 +2,7 @@
 Web Content Analyzer is an android application allowing to give the classification of a Web page by determining its category from the analysis of its textual content.
 
 # App Features:
-- analyze the page from its URL
+- analyze the page from its URL (number of words and their occurrences, the longest sentence..)
 - extract the text from the page
 - extract all images from the page
 - extract the links found on the page
