@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:icon="@drawable/ic_baseline_menu_24"
+        app:showAsAction="always"
+        android:iconTint="@color/emoji_white"
+        android:title="Menu">
+
+ <menu>
+
+    <item
+        android:id="@+id/apropos"
+        android:orderInCategory="100"
+        android:title="A Propos"
+        android:icon="@drawable/ic_baseline_info_24"
+        app:showAsAction="never" />
+
+    <item
+    android:id="@+id/partager"
+    android:orderInCategory="100"
+     android:icon="@drawable/ic_baseline_share_24"
+    android:title="Partager"
+    app:showAsAction="never" />
+
+    <item
+        android:id="@+id/noter"
+        android:orderInCategory="100"
+        android:title="Noter"
+        android:icon="@drawable/ic_baseline_star_half_24"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/quitter"
+        android:orderInCategory="100"
+        android:title="Quitter"
+        android:icon="@drawable/ic_baseline_exit_to_app_24"
+        app:showAsAction="never" />
+
+        </menu>
+    </item>
+</menu>

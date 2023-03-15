@@ -1,0 +1,456 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AnalyseActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Titre de la page analysée : "
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimary"
+            android:textSize="15dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginBottom="15dp"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/titre_page"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Titre de la page analysée : "
+            android:textColor="@color/emoji_black"
+            android:fontFamily="sans-serif-condensed"
+            android:textSize="15dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginBottom="15dp"
+            android:padding="5dp"
+            android:background="@drawable/background_bordure"
+            android:gravity="center"/>
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Résultats de l'analyse"
+                android:textStyle="bold|italic"
+                android:textColor="@color/colorPrimary"
+                android:textSize="18dp"
+                android:fontFamily="casual"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="5dp"
+                android:gravity="left"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@color/colorPrimary"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:stretchColumns="1,2"
+                android:layout_marginBottom="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nombre total des caractères : "
+                    android:textColor="@color/emoji_black"
+                    android:textSize="15dp"
+                    android:fontFamily="sans-serif-condensed"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:id="@+id/nbCar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:fontFamily="sans-serif-condensed"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="15dp"
+                    android:gravity="center"/>
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nombre total des mots : "
+                    android:textColor="@color/emoji_black"
+                    android:textSize="15dp"
+                    android:fontFamily="sans-serif-condensed"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="5dp" />
+
+                <TextView
+                    android:id="@+id/nbMots"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:fontFamily="sans-serif-condensed"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="15dp"
+                    android:gravity="center"/>
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nombre total d'espace : "
+                    android:textColor="@color/emoji_black"
+                    android:textSize="15dp"
+                    android:fontFamily="sans-serif-condensed"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="5dp"/>
+
+                <TextView
+                    android:id="@+id/nbSpace"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:fontFamily="sans-serif-condensed"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="15dp"
+                    android:gravity="center"/>
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="25dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nombre total des phrases : "
+                    android:textColor="@color/emoji_black"
+                    android:textSize="15dp"
+                    android:fontFamily="sans-serif-condensed"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="5dp" />
+
+                <TextView
+                    android:id="@+id/nbPhrases"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:fontFamily="sans-serif-condensed"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="15dp"
+                    android:gravity="center"/>
+            </TableRow>
+            </TableLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:fontFamily="sans-serif-condensed"
+                        android:textStyle="bold"
+                        android:text="Mot le plus long: "
+                        android:textColor="@color/emoji_black"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/LongMot"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="mot le plus long"
+                        android:layout_marginLeft="10dp"
+                        android:fontFamily="sans-serif-condensed"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="15dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Longue Phrase: "
+                        android:textColor="@color/emoji_black"
+                        android:textSize="15dp"
+                        android:fontFamily="sans-serif-condensed"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="5dp"/>
+
+                    <TextView
+                        android:id="@+id/LonguePhrase"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="la phrase la plus longue"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="15dp"
+                        android:layout_marginLeft="10dp"
+                        android:fontFamily="sans-serif-condensed"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="15dp"
+            android:background="@color/colorPrimary"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Les mots et leurs occurrences"
+                android:textStyle="bold|italic"
+                android:textColor="@color/colorPrimary"
+                android:textSize="18dp"
+                android:fontFamily="casual"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="5dp"
+                android:gravity="left"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:stretchColumns="1,2,3">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Mots"
+                        android:gravity="center"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="15dp"
+                        android:textStyle="bold"
+                        android:layout_column="1"
+                        android:fontFamily="sans-serif-condensed"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Occurrences"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="15dp"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:layout_column="1"
+                        android:fontFamily="sans-serif-condensed"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Frequence"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="15dp"
+                        android:layout_column="1"
+                        android:gravity="center"
+                        android:fontFamily="sans-serif-condensed"/>
+
+                </TableRow>
+
+            </TableLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:contextClickable="false"
+                android:divider="@android:color/transparent"
+                android:dividerHeight="0dp"
+                android:id="@+id/liste_mots"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="15dp"
+            android:background="@color/colorPrimary"/>
+        <!--
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Longueur des mots"
+                        android:textStyle="bold|italic"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="18dp"
+                        android:fontFamily="casual"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:gravity="left"/>
+                </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:orientation="vertical">
+
+                            <TableLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <TableRow
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="5dp">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:text="Longeur de mots"
+                                        android:gravity="center"
+                                        android:textColor="@color/colorPrimary"
+                                        android:textSize="15dp"
+                                        android:textStyle="bold"
+                                        android:fontFamily="sans-serif-condensed"/>
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:text="Nombre de mots"
+                                        android:textColor="@color/colorPrimary"
+                                        android:textSize="15dp"
+                                        android:gravity="center"
+                                        android:textStyle="bold"
+                                        android:fontFamily="sans-serif-condensed"/>
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:text="Frequence"
+                                        android:textStyle="bold"
+                                        android:textColor="@color/colorPrimary"
+                                        android:textSize="15dp"
+                                        android:gravity="center"
+                                        android:fontFamily="sans-serif-condensed"/>
+                                </TableRow>
+                            </TableLayout>
+
+                            <androidx.clerview.widget.RecyclerView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:clickable="false"
+                                android:contextClickable="false"
+                                android:divider="@android:color/transparent"
+                                android:dividerHeight="0dp"
+                                android:id="@+id/longueur_mots"/>
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="2dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginTop="15dp"
+                            android:background="@color/colorPrimary"/>
+                -->
+    </LinearLayout>
+
+</ScrollView>
+
+</LinearLayout>

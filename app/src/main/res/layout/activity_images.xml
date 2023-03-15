@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16sp"
+    android:orientation="vertical"
+    tools:context=".ImagesActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Extraction des images de la page web"
+                android:textStyle="bold|italic"
+                android:textColor="@color/colorPrimary"
+                android:textSize="18dp"
+                android:fontFamily="casual"
+                android:layout_marginBottom="15dp"
+                android:gravity="center"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@drawable/background_border_round"
+                android:layout_marginBottom="0dp"/>
+
+        </LinearLayout>
+
+        <GridView
+            android:id="@+id/grid_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:columnWidth="150dp"
+            android:minHeight="150dp"
+            android:numColumns="2"
+            android:scrollbars="none"
+            android:horizontalSpacing="10dp"
+            android:verticalSpacing="5dp"
+            android:padding="10dp"
+            android:stretchMode="columnWidth" />
+
+</LinearLayout>

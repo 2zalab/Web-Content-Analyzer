@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity"
+    android:background="@color/colorPrimary">
+
+    <com.google.android.material.appbar.CollapsingToolbarLayout
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:fitsSystemWindows="false"
+        android:theme="@style/ThemeOverlay.AppCompat.DayNight.ActionBar"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:padding="10dp">
+        <include layout="@layout/action_bar_layout"/>
+    </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+
+    <RelativeLayout
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <!--include layout="@layout/back_layout"/-->
+        <include layout="@layout/front_layout" />
+    </RelativeLayout>
+
+</LinearLayout>

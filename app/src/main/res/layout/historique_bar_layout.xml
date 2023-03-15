@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center">
+
+    <!--ImageView
+        android:id="@+id/Imgbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_baseline_home_24"
+        android:layout_alignParentLeft="true"
+        app:tint="@color/blanc" /-->
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:layout_centerInParent="false"
+        android:layout_marginLeft="15dp"
+        android:text="Historique"
+        android:layout_marginStart="10dp"
+        style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"/>
+
+    <ImageView
+     android:id="@+id/ImgDelete"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:src="@drawable/ic_baseline_delete_forever_24"
+     android:layout_alignParentRight="true"
+        android:layout_marginRight="5dp"
+     app:tint="@color/blanc" />
+
+</RelativeLayout>

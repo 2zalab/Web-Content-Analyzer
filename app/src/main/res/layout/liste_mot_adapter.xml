@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="0dp">
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp">
+
+        <TextView
+            android:id="@+id/id_mot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_column="1"
+            android:gravity="center"
+            android:textColor="@color/emoji_black"
+            android:textSize="15dp"
+            android:layout_marginLeft="0dp"
+            android:fontFamily="sans-serif-condensed"/>
+
+        <TextView
+            android:id="@+id/id_occurrence"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="sans-serif-condensed"
+            android:gravity="center"
+            android:layout_column="1"
+            android:layout_marginLeft="0dp"
+            android:textColor="@color/emoji_black"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/id_frequence"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/emoji_black"
+            android:textSize="15dp"
+            android:layout_marginLeft="0dp"
+            android:gravity="center"
+            android:layout_column="1"
+            android:layout_marginRight="10dp"
+            android:fontFamily="sans-serif-condensed"/>
+
+    </TableRow>
+</TableLayout>

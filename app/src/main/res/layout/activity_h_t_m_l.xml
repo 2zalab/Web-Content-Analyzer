@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:scrollbars="none"
+    android:padding="16sp"
+    tools:context=".HTMLActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Schema HTML de la page"
+                android:textStyle="bold|italic"
+                android:textColor="@color/colorPrimary"
+                android:textSize="18dp"
+                android:fontFamily="casual"
+                android:layout_marginBottom="15dp"
+                android:gravity="center"/>
+
+            <EditText
+                android:id="@+id/schema_html"
+                android:layout_width="match_parent"
+                android:layout_height="401dp"
+                android:background="@drawable/background_bordure"
+                android:fontFamily="monospace"
+                android:gravity="top"
+                android:padding="5dp"
+                android:scrollbars="vertical" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/btn_fermer_schema"
+                android:layout_width="120dp"
+                android:layout_weight="3"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/img_fermer"/>
+
+            <ImageButton
+                android:id="@+id/btn_copie_schema"
+                android:layout_width="120dp"
+                android:layout_weight="3"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/img_copier"/>
+
+            <ImageButton
+                android:id="@+id/btn_pdf_schema"
+                android:layout_width="120dp"
+                android:layout_weight="3"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/img_pdf"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
