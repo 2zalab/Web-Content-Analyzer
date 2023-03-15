@@ -20,3 +20,4 @@ Web Content Analyzer is an android application allowing to give the classificati
 
 # Technologies used
 
+![Xml](https://img.shields.io/badge/xml-%2300f.svg?style=for-the-badge&logo=xml&logoColor=white) ![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=java&logoColor=white) 
